@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi página de videojuegos - PLATAFORMAS DE VIDEOJUEGOS </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #menu li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    #menu li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    #contenido {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333333;
+    }
+
+    .plataforma-videojuegos {
+      margin-bottom: 20px;
+    }
+
+    .plataforma-videojuegos img {
+      width: 200px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <ul id="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="New.html">Lo nuevo</a></li>
+      <li><a href="Contact.html">Contáctanos</a></li>
+      <li><a href="#" onclick="cerrarVentana()">Salir</a></li> 
+    </ul>
+  </div>
+
+  <div id="contenido">
+    <h2>PLATAFORMAS DE VIDEOJUEGOS</h2>
+
+    <div class="Playstation">
+      <h3><a href="https://www.playstation.com/">Playstation</a></h3>
+      <a href="https://www.playstation.com/"><img src="data:image/png;base64,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" alt="Logo Página 1"></a>
+    </div>
+
+    <div class="plataforma-videojuegos">
+      <h3><a href="https://www.nintendo.com/">NINTENDO</a></h3>
+      <a href="https://www.nintendo.com/"><img src="data:image/jpeg;base64,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" alt="Logo Página 2"></a>
+    </div>
+
+    <div class="plataforma-videojuegos">
+      <h3><a href="https://www.xbox.com/es-ES/">XBOX</a></h3>
+      <a href="https://www.xbox.com/es-ES/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCp_v6-p1lDiyECVZdIxns5J8PVTmpI2y2ig&usqp=CAU" alt="Logo Página 3"></a>
+    </div>
+  </div>
+
+  <script>
+  function cerrarVentana() {
+          window.close(); // Cierra la pestaña actual
+        }
+  </script>
+</body>
+</html>

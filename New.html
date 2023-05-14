@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi página de videojuegos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #menu li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    #menu li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    #contenido {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333333;
+    }
+
+    .mosaico-imagenes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .mosaico-imagenes img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <ul id="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="Videos.html">Plataformas de Videojuegos</a></li>
+      <li><a href="Contact.html">Contáctanos</a></li>
+      <li><a href="#" onclick="cerrarVentana()">Salir</a></li> 
+    </ul>
+  </div>
+
+  <h1>NOTICIAS</h1>
+
+  <div id="contenido">
+    <h2>Imágenes</h2>
+
+    <div class="mosaico-imagenes">
+      <a href="https://vandal.elespanol.com/noticias/videojuegos"><img src="https://thumbs.gfycat.com/ImmaterialScrawnyGentoopenguin-max-1mb.gif" alt="Imagen 1">Noticias</a>
+      <a href="https://www.levelup.com/noticias"><img src="https://i.gifer.com/origin/46/46a2c29764921b054613d53ff4ba4e82_w200.gif" alt="Imagen 2"></a>
+      <a href="https://www.3djuegos.com/noticias"><img src="https://i.gifer.com/origin/2d/2d17278a87345a4e4295dfadf7d6205c_w200.gif" alt="Imagen 3"></a>
+      <a href="https://www.marca.com/videojuegos.html"><img src="https://thumbs.gfycat.com/WhimsicalForkedCrownofthornsstarfish-max-1mb.gif" alt="Imagen 4"></a>
+      <a href="https://es.wired.com/cultura/gaming"><img src="https://i.gifer.com/origin/aa/aaa918fb8ec698147c0cfefc0e85f985_w200.gif" alt="Imagen 5"></a>
+      <a href="https://www.xataka.com/categoria/videojuegos"><img src="https://static01.nyt.com/images/2021/07/22/business/22TechFixIllo-esp-1/22TechFixIllo-superJumbo.gif" alt="Imagen 6"></a>
+    </div>
+  </div>
+
+  <script>
+    function cerrarVentana() {
+      window.close(); // Cierra la pestaña actual
+    }
+  </script>
+</body>
+</html>

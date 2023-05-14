@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi página de videojuegos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    #header {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #menu li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    #menu li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <ul id="menu">
+      <li><a href="Videos.html">Plataformas de Videojuegos</a></li>
+      <li><a href="New.html">Lo nuevo</a></li>
+      <li><a href="Contact.html">Contáctanos</a></li>
+      <li><a href="#" onclick="cerrarVentana()">Salir</a></li> 
+    </ul>
+  </div>
+
+  <h1>Bienvenido a mi página de videojuegos</h1>
+
+  <p>Aquí encontrarás información sobre videojuegos y las últimas novedades en la industria.</p>
+    <div class="contenedor-imagen">
+    <center>    
+    <img src="unnamed.png" width="300" height="200" class="imagen-centrada">
+    </center>
+    </div>    
+
+
+    <script>
+        function cerrarVentana() {
+          window.close(); // Cierra la pestaña actual
+        }
+      </script>
+</body>
+</html>
